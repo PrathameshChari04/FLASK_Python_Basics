@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+Form Submitting
+{% endblock heading %}
+
+
+{% block body %}
+<Form class="center" action="{{ url_for('submit') }}" method="post">
+
+    <input type="text" name=name placeholder="Enter Your Name">
+    <button>Submit</button>
+
+</Form>
+
+{% endblock body %}
+
+
